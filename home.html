@@ -2,52 +2,97 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>Profile</title>
-    <meta name="Home" content="Home" />
+    <title>Makino`s Home Plan</title>
+    <meta name="建てる家のイメージ" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
-    <main>
-      <div id="mainvisual">
-        <img src="./img/H1.jpg" alt="" />
+    <header id="header" class="wrapper">
+      <h1 class="site-title">
+        <a href="index.html"><h1>HOME</h1></a>
+      </h1>
+
+      <nav id="navi">
+        <ul class="nav-menu">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="exterior.html">EXTERIOR</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="restroom.html">RESTROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+        </ul>
+      </nav>
+
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
       </div>
 
-      <section id="bicycle" class="wrapper">
-        <h2 class="section-title">Select</h2>
-        <ul>
+      <div id="mask"></div>
+    </header>
+
+    <main>
+      <div id="top" class="wrapper">
+        <ul class="product-list">
           <li>
-            <a href="./exterior.html"
-              ><img
-                src="/Users/kimiko/Desktop/My home/Makino_Jaleel_Kimiko/img/H1.jpg"
-                alt=""
-            /></a>
+            <a href="/exterior.html">
+              <img src="/img/H2.png" alt="" />
+            </a>
           </li>
           <li>
-            <a href="livingroom.html"><img src="/img/H2.png" alt="" /></a>
+            <a href="/livingroom.html">
+              <img src="img/H3.png" alt="" />
+            </a>
           </li>
           <li>
-            <a href="kitchen.html"><img src="/img/H3.png" alt="" /></a>
+            <a href="/kitchen.html">
+              <img src="img/H4.png" alt="" />
+            </a>
           </li>
           <li>
-            <a href="restroom.html"><img src="/img/H4.png" alt="" /></a>
+            <a href="restroom.html">
+              <img src="img/H5.png" alt="" />
+            </a>
           </li>
           <li>
-            <a href="bathroom.html"
-              ><img
-                src="https://www.canva.com/design/DAGWOJwcgLw/ij2oj35YwY5x2brwUFuCFA/view"
-                alt=""
-            /></a>
+            <a href="/bathroom.html">
+              <img src="img/H6.png" alt="" />
+            </a>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
 
-    <footer id="footer">
-      <p>&copy; 2024 Profile</p>
+    <footer id="footer" class="wrapper">
+      <ul class="menu">
+        <li>
+          <i class="fa-regular fa-envelope fa-xl"></i>
+          <a
+            href="mailto:mkjljono@gmail.com?cc=kimi1009_gi@icloud.com"
+            target="_blank"
+            >Mail Address</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-phone-volume fa-xl"></i>
+          <a href="tel:09070172161" target="_blank">Phone Number</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+          <a href="https://line.me/ti/g/FVzUrHYKwZ" target="_blank">LINE</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; 槇野 ジェリエル 貴美子</p>
     </footer>
     <!-- 追従するHOMEボタンHTML -->
     <a href="/home.html" id="home-link"><i class="blogicon-home"></i></a>

@@ -15,6 +15,7 @@ img {
 }
 li {
   list-style: none;
+  gap: 15px;
 }
 .site-title {
   width: 120px;
@@ -64,18 +65,7 @@ li {
   opacity: 0.7;
 }
 
-/*-------------------------------------------
-Mainvisual
--------------------------------------------*/
-#mainvisual {
-  margin-bottom: 80px;
-}
-#mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  height: 600px;
-  object-fit: cover;
-}
+
 
 /*-------------------------------------------
 About
@@ -100,12 +90,15 @@ Bicycle
 -------------------------------------------*/
 #bicycle ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 #bicycle li {
   width: 32%;
+  display: flex;
+  justify-content: center;
 }
 
 /*-------------------------------------------
@@ -142,16 +135,21 @@ Homeボタン
 }
 /***追従するHOMEボタン***/
 
+/* box */
+.box {
+  background: #000;
+  width: 270px;
+  height: 190px;
+  font-size: 30px;
+  color: aliceblue;
+  padding: 34px;
+}
+
 /*-------------------------------------------
 SP
 -------------------------------------------*/
 @media screen and (max-width: 600px) {
-  /*-------------------------------------------
-  Mainvisual
-  -------------------------------------------*/
-  #mainvisual img {
-    height: calc(100vh - 60px);
-  }
+
 
   /*-------------------------------------------
   About
