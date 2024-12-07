@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 検索にヒットさせない -->
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="" />
+    <title>【仮】猫の手</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__text">
+            <p class="header__text--size1">便利屋 猫の手</p>
+            <p class="header__text--size2">
+              　あなたの<span>お困り事</span>、解決します！！
+            </p>
+          </div>
+          <div class="header__logo">
+            <img
+              class="header__logo--size1"
+              src="./img/header_logo.png"
+              alt=""
+            />
+            <img
+              class="header__logo--size2"
+              src="./img/header_cat.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- mega menu -->
+    <section class="nav">
+      <div class="nav__inner">
+        <div class="nav__container">
+          <ul class="nav__list">
+            <li class="nav__item nav__item-l"><a href="#home">HOME</a></li>
+            <li class="nav__item nav__item-c"><a href="#order">ORDER</a></li>
+            <li class="nav__item nav__item-r">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- main -->
+    <section class="main">
+      <div class="main__inner">
+        <picture class="main__img">
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/main_pc_1920_900.png"
+          />
+          <img src="./img/main_sp_2.png" alt="" />
+        </picture>
+        <p class="main__text">
+          ※テキストテキストテキスト<br />　テキストテキストテキストテキストテキスト<br />　テキストテキストテキストテキストテキストテキスト
+        </p>
+      </div>
+    </section>
+
+    <!-- service -->
+    <section class="section" id="order">
+      <div class="section__inner">
+        <h2 class="service__head">
+          <span class="service__head-main">Order -</span>
+          <span class="service__head-sub">ご依頼の流れ</span>
+        </h2>
+        <p class="service__lead-text">
+          ご相談〜作業完了までの大まかな流れです。状況に応じて柔軟に対応いたします。
+        </p>
+
+        <!-- box -->
+        <div class="box">
+          <div class="box__inner">
+            <ul class="box__list">
+              <li class="box__item">
+                <p class="box__number">1</p>
+                <div class="box__img">
+                  <img src="./img/order_g_1.gif" alt="" />
+                </div>
+                <h3>ご相談・お見積り</h3>
+                <p class="box__text">
+                  要件や納期、予算などお気軽にご相談ください。<br />対応内容に応じてお見積りをお送りいたします。
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box__inner">
+            <ul class="box__list">
+              <li class="box__item">
+                <p class="box__number">2</p>
+                <div class="box__img">
+                  <img src="./img/order_g_2.gif" alt="" />
+                </div>
+                <h3>作業</h3>
+                <p class="box__text">
+                  ご要望を基に作業を行います。<br />作業後は品質チェックを行い調整します。
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box__inner">
+            <ul class="box__list">
+              <li class="box__item">
+                <p class="box__number">3</p>
+                <div class="box__img">
+                  <img src="./img/order_g_3.gif" alt="" />
+                </div>
+                <h3>確認</h3>
+                <p class="box__text">
+                  お客様ににご確認頂きます。<br />不足部分の修正と対応を行います。
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box__inner">
+            <ul class="box__list">
+              <li class="box__item">
+                <p class="box__number">4</p>
+                <div class="box__img">
+                  <img src="./img/order_g_4.gif" alt="" />
+                </div>
+                <h3>完了・お支払い</h3>
+                <p class="box__text">
+                  作業完了後、特に問題がなければ<br />代金をお支払いいただきます。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="section contact" id="contact">
+      <div class="section__inner contact__inner">
+        <h2 class="contact__head">
+          <span class="contact__head-main">Contact -</span>
+          <span class="contact__head-sub">お問い合わせ</span>
+        </h2>
+        <div class="contact__button">
+          <div class="contact__button-inner">
+            <div class="contact__butto-wrapper"><a href="mailto:mkjljono@gmail.com">
+              <span class="contact__button-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#F3F3F3"
+                >
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  /></svg
+              ></span>
+              <span class="button__text">Contact</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

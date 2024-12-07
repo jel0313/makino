@@ -1,0 +1,286 @@
+@use "_breakpoints";
+
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: "Oswald", "sans-serif", "Noto Sans JP";
+}
+
+/*-----------------------
+// SP
+-----------------------*/
+
+.header {
+  width: 100%;
+  height: 127px;
+  &__container {
+    display: flex;
+    position: relative;
+    z-index: 999;
+  }
+
+  &__logo--size1 {
+    width: 126px;
+  }
+  &__logo--size2 {
+    width: 100px;
+    position: absolute;
+    z-index: 700;
+    right: -262px;
+    top: 21px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 128px;
+    margin: 27px auto;
+    z-index: 800;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+  }
+
+  &__text--size1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  &__text--size2 {
+    font-weight: bold;
+    & > span {
+      color: #ba0909;
+      font-weight: bold;
+    }
+  }
+}
+
+// nav
+.nav {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item {
+    text-align: center;
+    background-color: #0f2350;
+    color: white;
+    font-size: 9px;
+    padding: 10px 0;
+  }
+}
+
+// main
+.main {
+  &__inner {
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    text-align: center;
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    top: 417px;
+    margin: 0 33px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
+// section
+.section {
+  &__inner {
+    padding: 0 32px;
+    width: 100%;
+  }
+}
+
+// service
+.service {
+  &__head {
+    display: flex;
+    flex-direction: column;
+    &-main {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  &__head-sub {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  &__lead-text {
+    margin-top: 20px;
+  }
+}
+
+.box {
+  margin-top: 40px;
+
+  &__inner {
+    border: gray solid 1px;
+    border-radius: 68px;
+    position: relative;
+    padding: 46px 16px 24px;
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    & + & {
+      margin-top: 52px;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    background-color: #00000087;
+    color: white;
+    padding: 0 10px;
+  }
+
+  &__img {
+    text-align: center;
+
+    img {
+      width: 99px;
+    }
+    video {
+      width: 99px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+// contact
+.contact {
+  margin-top: 27px;
+
+  &__inner {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5294117647);
+    color: white;
+    padding: 40px 32px;
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    &-main {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  &__head-sub {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  &__lead-text {
+    margin-top: 20px;
+  }
+
+  &__button {
+    padding: 26px 0;
+    position: relative;
+    margin-top: 25px;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-inner {
+      width: 158px;
+      padding: 7px;
+      border: solid 1px white;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-icon {
+      position: absolute;
+      left: 15px;
+      top: 6px;
+    }
+  }
+}
+
+/*-----------------------
+// PC
+-----------------------*/
+@include breakpoints.mq(pc) {
+  // nav
+  .nav {
+    &__item {
+      font-size: 15px;
+    }
+
+    &__item-l {
+      padding-left: 50%;
+    }
+    &__item-r {
+      padding-right: 50%;
+    }
+  }
+
+  .header {
+    &__text {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 27px auto;
+      z-index: 800;
+      transform: translateX(-50%);
+    }
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 33px;
+
+    &__inner {
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .main {
+    &__text {
+      position: absolute;
+      left: 30px;
+      top: 427px;
+    }
+    &__inner {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    margin-top: 57px;
+  }
+
+  .section {
+    &__inner {
+      margin-top: 52px;
+    }
+  }
+}
