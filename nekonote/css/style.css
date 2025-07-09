@@ -1,0 +1,250 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: "Oswald", "sans-serif", "Noto Sans JP";
+}
+
+/*-----------------------
+// SP
+-----------------------*/
+.header {
+  width: 100%;
+  height: 127px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 999;
+}
+.header__logo--size1 {
+  width: 126px;
+}
+.header__logo--size2 {
+  width: 100px;
+  position: absolute;
+  z-index: 700;
+  right: -262px;
+  top: 21px;
+}
+.header__text {
+  position: absolute;
+  top: 0;
+  left: 128px;
+  margin: 27px auto;
+  z-index: 800;
+}
+.header__logo {
+  position: absolute;
+  top: 0;
+}
+.header__text--size1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.header__text--size2 {
+  font-weight: bold;
+}
+.header__text--size2 > span {
+  color: #ba0909;
+  font-weight: bold;
+}
+
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nav__item {
+  text-align: center;
+  background-color: #0f2350;
+  color: white;
+  font-size: 9px;
+  padding: 10px 0;
+}
+
+.main__inner {
+  position: relative;
+}
+.main__img {
+  width: 100%;
+  text-align: center;
+}
+.main__text {
+  position: absolute;
+  left: 0;
+  top: 417px;
+  margin: 0 33px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.section__inner {
+  padding: 0 32px;
+  width: 100%;
+}
+
+.service__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.service__head-main {
+  font-size: 40px;
+  font-weight: bold;
+}
+.service__head-sub {
+  font-size: 11px;
+  margin-top: 10px;
+}
+.service__lead-text {
+  margin-top: 20px;
+}
+
+.box {
+  margin-top: 40px;
+}
+.box__inner {
+  border: gray solid 1px;
+  border-radius: 68px;
+  position: relative;
+  padding: 46px 16px 24px;
+}
+.box__inner h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.box__inner + .box__inner {
+  margin-top: 52px;
+}
+.box__number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5294117647);
+  color: white;
+  padding: 0 10px;
+}
+.box__img {
+  text-align: center;
+}
+.box__img img {
+  width: 99px;
+}
+.box__img video {
+  width: 99px;
+}
+.box__text {
+  text-align: center;
+}
+
+.contact {
+  margin-top: 27px;
+}
+.contact__inner {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5294117647);
+  color: white;
+  padding: 40px 32px;
+}
+.contact__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+.contact__head-main {
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact__head-sub {
+  font-size: 11px;
+  margin-top: 10px;
+}
+.contact__lead-text {
+  margin-top: 20px;
+}
+.contact__button {
+  padding: 26px 0;
+  position: relative;
+  margin-top: 25px;
+}
+.contact__button-wrapper {
+  position: relative;
+}
+.contact__button-inner {
+  width: 158px;
+  padding: 7px;
+  border: solid 1px white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.contact__button-icon {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+/*-----------------------
+// PC
+-----------------------*/
+@media screen and (min-width: 768px) {
+  .nav__item {
+    font-size: 15px;
+  }
+  .nav__item-l {
+    padding-left: 50%;
+  }
+  .nav__item-r {
+    padding-right: 50%;
+  }
+  .header__text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 27px auto;
+    z-index: 800;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 33px;
+  }
+  .box__inner + .box__inner {
+    margin-top: 0;
+  }
+  .main__text {
+    position: absolute;
+    left: 30px;
+    top: 427px;
+  }
+  .main__inner {
+    width: 100%;
+  }
+  .contact {
+    margin-top: 57px;
+  }
+  .section__inner {
+    margin-top: 52px;
+  }
+}
